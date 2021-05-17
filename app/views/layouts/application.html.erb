@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>WeightTracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +11,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar">
+      <a class="link bold" href="/">LiftingTracker</a>
+      <div class="links">
+        <a class="link" href="/entries">Entries</a>
+        <span>|</span>
+        <a class="link" href="/measurements">Measurements</a>
+      </div>
+    </div>
+    <div class="main">
+      <%= yield %>
+    </div>
   </body>
 </html>
